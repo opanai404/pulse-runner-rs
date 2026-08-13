@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pulse Runner RS</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Edge job control</p>
+          <h1>Pulse Runner RS</h1>
+        </div>
+        <div class="status-strip" aria-live="polite">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="health-label">Connecting</span>
+        </div>
+      </header>
+
+      <section class="metrics-grid" aria-label="Runner metrics">
+        <article class="metric">
+          <span>Total</span>
+          <strong id="metric-total">0</strong>
+        </article>
+        <article class="metric">
+          <span>Pending</span>
+          <strong id="metric-pending">0</strong>
+        </article>
+        <article class="metric">
+          <span>Running</span>
+          <strong id="metric-running">0</strong>
+        </article>
+        <article class="metric success">
+          <span>Succeeded</span>
+          <strong id="metric-succeeded">0</strong>
+        </article>
+        <article class="metric danger">
+          <span>Failed</span>
+          <strong id="metric-failed">0</strong>
+        </article>
+      </section>
+
+      <section class="control-row" aria-label="Job controls">
+        <form id="create-job-form" class="create-form">
+          <label>
+            <span>Kind</span>
+            <select name="kind">
+              <option value="heartbeat">heartbeat</option>
+              <option value="sensor-rollup">sensor-rollup</option>
+              <option value="webhook-delivery">webhook-delivery</option>
+              <option value="cache-warm">cache-warm</option>
+              <option value="cleanup">cleanup</option>
+            </select>
+          </label>
+          <label>
+            <span>Idempotency key</span>
+            <input name="idempotency_key" autocomplete="off" placeholder="ops-key-001">
+          </label>
+          <label>
+            <span>Max attempts</span>
+            <input name="max_attempts" type="number" min="1" max="10" value="4">
+          </label>
+          <button type="submit">Queue job</button>
+        </form>
+      </section>
+
+      <section class="workspace">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Jobs</h2>
+            <button id="refresh-button" type="button">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Kind</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Attempts</th>
+                  <th scope="col">Next run</th>
+                </tr>
+              </thead>
+              <tbody id="jobs-table"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>History</h2>
+            <span id="history-count" class="count-pill">0 events</span>
+          </div>
+          <ol id="history-list" class="history-list"></ol>
+        </article>
+      </section>
+    </main>
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>

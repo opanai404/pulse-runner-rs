@@ -1,0 +1,28 @@
+[package]
+name = "pulse-runner-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.94.0"
+license = "Apache-2.0"
+description = "Lightweight edge-style background job runner with idempotency and deterministic retry."
+publish = false
+
+[lib]
+name = "pulse_runner_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pulse-runner-rs"
+path = "src/main.rs"
+
+[dependencies]
+axum = "=0.8.9"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "1.0.145"
+tokio = { version = "=1.53.1", features = ["macros", "rt-multi-thread", "signal", "sync", "time", "net"] }
+tower-http = { version = "=0.7.0", features = ["fs", "trace"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter", "fmt", "json"] }
+
+[dev-dependencies]
+tower = { version = "0.5.2", features = ["util"] }

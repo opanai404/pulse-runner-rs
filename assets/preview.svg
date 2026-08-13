@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Pulse Runner RS dashboard preview</title>
+  <desc id="desc">Dark industrial operations dashboard showing job metrics, a job table, and history events.</desc>
+  <rect width="1200" height="720" fill="#06111f"/>
+  <path d="M0 0h1200v240H0z" fill="#092033"/>
+  <path d="M64 86h280v28H64z" fill="#37d8ff" opacity=".8"/>
+  <path d="M64 132h430v52H64z" fill="#e6edf7" opacity=".95"/>
+  <rect x="946" y="92" width="190" height="58" rx="8" fill="#0d1a2a" stroke="#223954"/>
+  <circle cx="976" cy="121" r="7" fill="#46e6a6"/>
+  <path d="M998 113h92v16h-92z" fill="#91a3b8"/>
+  <g transform="translate(64 238)">
+    <rect width="200" height="106" rx="8" fill="#112238" stroke="#223954"/>
+    <rect x="20" y="22" width="70" height="15" fill="#91a3b8"/>
+    <rect x="20" y="58" width="52" height="34" fill="#37d8ff"/>
+  </g>
+  <g transform="translate(284 238)">
+    <rect width="200" height="106" rx="8" fill="#112238" stroke="#223954"/>
+    <rect x="20" y="22" width="86" height="15" fill="#91a3b8"/>
+    <rect x="20" y="58" width="34" height="34" fill="#ffbd4a"/>
+  </g>
+  <g transform="translate(504 238)">
+    <rect width="200" height="106" rx="8" fill="#112238" stroke="#223954"/>
+    <rect x="20" y="22" width="82" height="15" fill="#91a3b8"/>
+    <rect x="20" y="58" width="34" height="34" fill="#37d8ff"/>
+  </g>
+  <g transform="translate(724 238)">
+    <rect width="200" height="106" rx="8" fill="#112238" stroke="#223954"/>
+    <rect x="20" y="22" width="96" height="15" fill="#91a3b8"/>
+    <rect x="20" y="58" width="72" height="34" fill="#46e6a6"/>
+  </g>
+  <g transform="translate(944 238)">
+    <rect width="192" height="106" rx="8" fill="#112238" stroke="#223954"/>
+    <rect x="20" y="22" width="62" height="15" fill="#91a3b8"/>
+    <rect x="20" y="58" width="34" height="34" fill="#ff6376"/>
+  </g>
+  <rect x="64" y="382" width="702" height="270" rx="8" fill="#0d1a2a" stroke="#223954"/>
+  <rect x="790" y="382" width="346" height="270" rx="8" fill="#0d1a2a" stroke="#223954"/>
+  <path d="M92 426h640M92 482h640M92 538h640M92 594h640" stroke="#223954"/>
+  <path d="M92 414h96v14H92zm162 0h110v14H254zm172 0h92v14h-92z" fill="#91a3b8"/>
+  <path d="M92 454h102v16H92zm162 0h118v16H254zm172 0h86v16h-86zm214 0h62v16h-62z" fill="#e6edf7"/>
+  <path d="M92 510h102v16H92zm162 0h132v16H254zm172 0h94v16h-94zm214 0h62v16h-62z" fill="#e6edf7" opacity=".78"/>
+  <path d="M92 566h102v16H92zm162 0h96v16h-96zm172 0h112v16H426zm214 0h62v16h-62z" fill="#e6edf7" opacity=".6"/>
+  <path d="M822 426h266v1H822z" stroke="#223954"/>
+  <rect x="822" y="446" width="282" height="44" rx="6" fill="#081727"/>
+  <rect x="822" y="506" width="282" height="44" rx="6" fill="#081727"/>
+  <rect x="822" y="566" width="282" height="44" rx="6" fill="#081727"/>
+  <path d="M844 460h120v14H844zm0 22h220v12H844z" fill="#91a3b8"/>
+  <path d="M844 520h138v14H844zm0 22h198v12H844z" fill="#91a3b8"/>
+  <path d="M844 580h104v14H844zm0 22h218v12H844z" fill="#91a3b8"/>
+</svg>
